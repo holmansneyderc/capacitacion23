@@ -10,9 +10,16 @@ import { NavComponent } from './shared/components/nav/nav.component';
 import { BannerComponent } from './shared/components/banner/banner.component';
 import { BlogComponent } from './shared/components/blog/blog.component';
 import { PodcastComponent } from './shared/components/podcast/podcast.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatToolbarModule, MatIconModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    HttpClientModule,
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
